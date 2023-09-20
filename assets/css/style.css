@@ -1,9 +1,11 @@
-html {
-  background-image: url('../../0_Design_Images/01.png');
-  background-size: cover;
-  background-position: 0 100px;
-  background-repeat: no-repeat;
-}
+/* START === DELETE */
+  html {
+    background-image: url('../../0_Design_Images/01.png');
+    background-size: cover;
+    background-position: 0 100px;
+    background-repeat: no-repeat;
+  }
+/* E N D === DELETE */
 
 /* START === CSS RESET */
   html {
@@ -72,13 +74,13 @@ html {
 /* START === HEADER */
   header {
     background: var(--primary-bg);
-    padding: 1em 0;
   }
 
   header > .container {
-    /* background: rgb(0, 0, 48); */
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
   } 
 
   header nav ul {
