@@ -1,0 +1,109 @@
+html {
+  background-image: url('../../0_Design_Images/01.png');
+  background-size: cover;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+}
+
+/* START === CSS RESET */
+  html {
+    box-sizing: border-box;
+  }
+
+  *, 
+  *::before, 
+  *::after  {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+/* E N D === CSS RESET */
+
+/* START === COMMON */
+  :root {
+    --primary-bg: #1F2937;
+    --primary-text: #F9FAF8;
+  }
+
+  @font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Black.ttf);
+    font-weight: 900;
+  }
+
+  html {
+    font-family: Roboto;
+  }
+
+  header > .container, 
+  main > .container,
+  footer > .container {
+    width: 1000px;
+  }
+
+  header,
+  main,
+  footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  header,
+  footer {
+    color: var(--primary-text);
+  }
+/* E N D === COMMON */
+
+/* START === HEADER */
+  header {
+    background: var(--primary-bg);
+    padding: 1em 0;
+  }
+
+  header > .container {
+    /* background: rgb(0, 0, 48); */
+    display: flex;
+    justify-content: space-between;
+  } 
+
+  header nav ul {
+    display: flex;
+    gap: 1.5em;
+  }
+/* E N D === HEADER */
+
+/* START ===  */
+/* E N D ===  */
+
+/* START ===  */
+/* E N D ===  */
+
+/* START ===  */
+/* E N D ===  */
+
+/* START ===  */
+/* E N D ===  */
+
+/* START ===  */
+/* E N D ===  */
+
+/* START ===  */
+/* E N D ===  */
+
+/* START ===  */
+/* E N D ===  */
