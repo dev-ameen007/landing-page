@@ -1,10 +1,10 @@
 /* START === DELETE */
-  html {
+  /* html {
     background-image: url('../../0_Design_Images/01.png');
     background-size: cover;
     background-position: 0 100px;
     background-repeat: no-repeat;
-  }
+  } */
 /* E N D === DELETE */
 
 /* START === CSS RESET */
@@ -34,6 +34,8 @@
   :root {
     --primary-bg: #1F2937;
     --primary-text: #F9FAF8;
+    --secondary-text: #E5E7EB;
+    --secondary-bg: #3882F6;
   }
 
   @font-face {
@@ -52,13 +54,13 @@
   }
 
   header > .container, 
-  main > .container,
+  main > section > .container,
   footer > .container {
     width: 1000px;
   }
 
   header,
-  main,
+  main > section,
   footer {
     display: flex;
     flex-flow: column nowrap;
@@ -66,16 +68,14 @@
   }
 
   header,
+  main section.hero,
   footer {
+    background: var(--primary-bg);
     color: var(--primary-text);
   }
 /* E N D === COMMON */
 
 /* START === HEADER */
-  header {
-    background: var(--primary-bg);
-  }
-
   header > .container {
     display: flex;
     justify-content: space-between;
@@ -86,11 +86,57 @@
   header nav ul {
     display: flex;
     gap: 1.5em;
+    font-size: 18px;
+    color: var(--secondary-text);
   }
 /* E N D === HEADER */
 
-/* START ===  */
-/* E N D ===  */
+/* START === HERO */
+  main section.hero .container {
+    display: flex;
+    padding: 100px 0;
+    align-items: center;
+  }
+
+  main section.hero .container .left {
+    padding-right: 50px;
+  }
+
+  main section.hero .container .left h2 {
+    font-size: 48px;
+    font-weight: 900;
+    padding-bottom: 10px;
+   }
+
+  main section.hero .container .left p {
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: var(--secondary-text);
+  }
+
+  main section.hero .container .left button {
+    background-color: var(--secondary-bg);
+    border: none;
+    color: var(--secondary-text);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 25px;
+    border-radius: 7px;
+  }
+
+  main section.hero .container .left button:hover {
+    background-color: #1461db;
+  }
+
+  main section.hero .container .right {
+    display:flex;
+  }
+
+  main section.hero .container .right img {
+    width: 500px;
+    height: 250px;
+  }
+/* E N D === HERO */
 
 /* START ===  */
 /* E N D ===  */
