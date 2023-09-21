@@ -173,9 +173,13 @@
     border-radius: 10px;
   }
 
+  main section:nth-child(2) .container .box-container .box .img-container img {
+    border-radius: 6px;
+  }
+
   main section:nth-child(2) .container .box-container .box .text-container {
     text-align: center;
-    color: var(--blue-1);
+    color: var(--blue1);
     font-size: 17px;
     padding-top: 15px;
   }
