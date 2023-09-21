@@ -32,10 +32,10 @@
 
 /* START === COMMON */
   :root {
-    --primary-bg: #1F2937;
-    --primary-text: #F9FAF8;
-    --secondary-text: #E5E7EB;
-    --secondary-bg: #3882F6;
+    --blue1: #1F2937;
+    --blue2: #3882F6;
+    --gray1: #F9FAF8;
+    --gray2: #E5E7EB;
   }
 
   @font-face {
@@ -59,19 +59,19 @@
     width: 1000px;
   }
 
-  header,
+  body > header,
   main > section,
-  footer {
+  body > footer {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
   }
 
-  header,
+  body > header,
   main section.hero,
-  footer {
-    background: var(--primary-bg);
-    color: var(--primary-text);
+  body > footer {
+    background: var(--blue1);
+    color: var(--gray1);
   }
 /* E N D === COMMON */
 
@@ -87,7 +87,7 @@
     display: flex;
     gap: 1.5em;
     font-size: 18px;
-    color: var(--secondary-text);
+    color: var(--gray2);
   }
 /* E N D === HEADER */
 
@@ -111,13 +111,13 @@
   main section.hero .container .left p {
     padding-bottom: 20px;
     font-size: 18px;
-    color: var(--secondary-text);
+    color: var(--gray2);
   }
 
   main section.hero .container .left button {
-    background-color: var(--secondary-bg);
+    background-color: var(--blue2);
     border: none;
-    color: var(--secondary-text);
+    color: var(--gray2);
     font-size: 18px;
     font-weight: bold;
     padding: 8px 25px;
@@ -147,7 +147,7 @@
     text-align: center;
     font-size: 36px;
     font-weight: bold;
-    color: var(--primary-bg);
+    color: var(--blue1);
   }
 
   main section:nth-child(2) .container .box-container {
@@ -165,20 +165,38 @@
     display: flex;
     width: 165px;
     height: 165px;
-    border: 4px solid var(--secondary-bg);
+    border: 4px solid var(--blue2);
     border-radius: 10px;
   }
 
   main section:nth-child(2) .container .box-container .box .text-container {
     text-align: center;
-    color: #4b5563;
+    color: var(--blue-1);
     font-size: 17px;
     padding-top: 15px;
   }
 /* E N D === SECTION 2 */
 
-/* START ===  */
-/* E N D ===  */
+/* START === SECTION 3 */
+  main section:nth-child(3) {
+    background-color: var(--gray2);
+    color: var(--blue-1);
+    padding: 150px 0;
+  }
+
+  main section:nth-child(3) blockquote p {
+    font-style: italic;
+    font-size: 36px;
+  }
+
+  main section:nth-child(3) blockquote footer {
+    font-weight: bold;
+    text-align: right;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-right: 30px;
+  }
+/* E N D === SECTION 3 */
 
 /* START ===  */
 /* E N D ===  */
