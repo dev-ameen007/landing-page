@@ -249,8 +249,12 @@
   }
 /* E N D === SECTION 4 */
 
-/* START ===  */
-/* E N D ===  */
+/* START === footer */
+  body > footer {
+    padding: 40px 0;
+    text-align: center;
+  }
+/* E N D === footer */
 
 /* START ===  */
 /* E N D ===  */
