@@ -183,13 +183,13 @@
     color: var(--blue-1);
     padding: 150px 0;
   }
-
-  main section:nth-child(3) blockquote p {
+  
+  main section:nth-child(3) .container blockquote p {
     font-style: italic;
     font-size: 36px;
   }
 
-  main section:nth-child(3) blockquote footer {
+  main section:nth-child(3) .container blockquote footer {
     font-weight: bold;
     text-align: right;
     font-size: 24px;
@@ -198,8 +198,56 @@
   }
 /* E N D === SECTION 3 */
 
-/* START ===  */
-/* E N D ===  */
+/* START === SECTION 4 */
+  main section:nth-child(4) {
+    padding: 100px 0;
+  }
+
+  main section:nth-child(4) .container {
+    display: flex;
+    background-color: var(--blue2);
+    color: var(--gray1);
+    padding: 50px 120px; 
+    border-radius: 10px;
+  }
+
+  main section:nth-child(4) .container .left,
+  main section:nth-child(4) .container .right {
+    display: flex;
+    flex: auto;
+  }
+
+  main section:nth-child(4) .container .left {
+    flex-flow: column nowrap;
+  }
+
+  main section:nth-child(4) .container .right {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  main section:nth-child(4) .container .left p:nth-child(1) {
+    font-size: 24px;
+  }
+
+  main section:nth-child(4) .container .left p:nth-child(2) {
+    color: var(--gray2);
+    font-size: 18px;
+  }
+
+  main section:nth-child(4) .container .right button {
+    background-color: var(--blue2);
+    color: var(--gray1);
+    border: 2px solid var(--gray1);
+    border-radius: 7px;
+    padding: 7px 35px;
+    font-size: 18px;
+  }
+
+  main section:nth-child(4) .container .right button:hover {
+    border-color: var(--blue1);
+  }
+/* E N D === SECTION 4 */
 
 /* START ===  */
 /* E N D ===  */
